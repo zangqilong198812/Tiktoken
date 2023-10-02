@@ -41,7 +41,7 @@ public class Encoding {
     
     private let coreBpe: CoreBPE
     
-    init(name: String, regex: NSRegularExpression, mergeableRanks: [[UInt8]: Int], specialTokens: [String: Int], explicitNVocab: Int? = nil) {
+    public init(name: String, regex: NSRegularExpression, mergeableRanks: [[UInt8]: Int], specialTokens: [String: Int], explicitNVocab: Int? = nil) {
         self.name = name
         self.regex = regex
         self.mergeableRanks = mergeableRanks

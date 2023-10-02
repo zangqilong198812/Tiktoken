@@ -30,7 +30,7 @@ public struct Vocab {
 public extension Vocab {
     static var gpt2: Vocab {
         .init(name: "gpt2",
-              url: "https://openaipublic.blob.core.windows.net/gpt-2/encodings/main/vocab.bpe",
+              url: "https://live-activity.oss-cn-beijing.aliyuncs.com/ChatDog/vocab.bpef",
               explicitNVocab: 50257,
               pattern: "/'s|'t|'re|'ve|'m|'ll|'d| ?\\p{L}+| ?\\p{N}+| ?[^\\s\\p{L}\\p{N}]+|\\s+(?!\\S)|\\s+/gu",
               specialTokens: ["<|endoftext|>": 50256])
@@ -38,7 +38,7 @@ public extension Vocab {
     
     static var r50kBase: Vocab {
         .init(name: "r50k_base",
-              url: "https://openaipublic.blob.core.windows.net/encodings/r50k_base.tiktoken",
+              url: "https://live-activity.oss-cn-beijing.aliyuncs.com/ChatDog/r50k_base.tiktoken",
               explicitNVocab: 50257,
               pattern: "/'s|'t|'re|'ve|'m|'ll|'d| ?\\p{L}+| ?\\p{N}+| ?[^\\s\\p{L}\\p{N}]+|\\s+(?!\\S)|\\s+/gu",
               specialTokens: ["<|endoftext|>": 50256])
@@ -46,7 +46,7 @@ public extension Vocab {
     
     static var p50kBase: Vocab {
         .init(name: "p50k_base",
-              url: "https://openaipublic.blob.core.windows.net/encodings/p50k_base.tiktoken",
+              url: "https://live-activity.oss-cn-beijing.aliyuncs.com/ChatDog/p50k_base.tiktoken",
               explicitNVocab: 50281,
               pattern: "/'s|'t|'re|'ve|'m|'ll|'d| ?\\p{L}+| ?\\p{N}+| ?[^\\s\\p{L}\\p{N}]+|\\s+(?!\\S)|\\s+/gu",
               specialTokens: ["<|endoftext|>": 50256])
@@ -54,7 +54,7 @@ public extension Vocab {
     
     static var p50kEdit: Vocab {
         .init(name: "p50k_edit",
-              url: "https://openaipublic.blob.core.windows.net/encodings/p50k_base.tiktoken",
+              url: "https://live-activity.oss-cn-beijing.aliyuncs.com/ChatDog/p50k_base.tiktoken",
               pattern: "/'s|'t|'re|'ve|'m|'ll|'d| ?\\p{L}+| ?\\p{N}+| ?[^\\s\\p{L}\\p{N}]+|\\s+(?!\\S)|\\s+/gu",
               specialTokens: [
                 "<|endoftext|>": 50256,
@@ -66,7 +66,7 @@ public extension Vocab {
     
     static var cl100kBase: Vocab {
         .init(name: "cl100k_base",
-              url: "https://openaipublic.blob.core.windows.net/encodings/cl100k_base.tiktoken",
+              url: "https://live-activity.oss-cn-beijing.aliyuncs.com/ChatDog/cl100k_base.tiktoken",
               pattern: "/(?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\\r\\n\\p{L}\\p{N}]?\\p{L}+|\\p{N}{1,3}| ?[^\\s\\p{L}\\p{N}]+[\\r\\n]*|\\s*[\\r\\n]+|\\s+(?!\\S)|\\s+/gu",
               specialTokens: [
                 "<|endoftext|>": 100257,
